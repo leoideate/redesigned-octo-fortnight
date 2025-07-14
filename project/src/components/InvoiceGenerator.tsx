@@ -11,7 +11,7 @@ interface InvoiceGeneratorProps {
   entries: CallEntry[];
 }
 
-export function InvoiceGenerator({ entries }: InvoiceGeneratorProps) {
+export function InvoiceGenerator() {
   const [dateRange, setDateRange] = useState({
     start: format(startOfMonth(new Date()), 'yyyy-MM-dd'),
     end: format(endOfMonth(new Date()), 'yyyy-MM-dd'),
